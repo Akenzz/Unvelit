@@ -228,10 +228,6 @@ npm run lint
 4. Ensure code passes linting
 5. Submit a pull request
 
-## 📄 License
-
-This project is provided as-is for public use. Check the LICENSE file for details.
-
 ---
 
 **Project Created:** 2024  
