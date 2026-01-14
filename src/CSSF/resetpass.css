@@ -1,0 +1,151 @@
+.pwd-reset-container {
+    /* background-color: #121212; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('/stars.jpg') !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.pwd-reset-card {
+    /* background-color: #1e1e1e; */
+    background-color: #191919af;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 32px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.pwd-reset-title {
+    color: #e0e0e0;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.pwd-reset-error {
+    background-color: rgba(220, 38, 38, 0.2);
+    border: 1px solid rgba(220, 38, 38, 0.5);
+    color: #f87171;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.pwd-reset-success {
+    background-color: rgba(22, 163, 74, 0.2);
+    border: 1px solid rgba(22, 163, 74, 0.5);
+    color: #86efac;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.pwd-reset-form,
+.pwd-reset-verification-form {
+    margin-top: 8px;
+}
+
+.pwd-reset-input-group {
+    margin-bottom: 24px;
+}
+
+.pwd-reset-label {
+    display: block;
+    color: #d1d5db;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.pwd-reset-input {
+    width: 100%;
+    background-color: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pwd-reset-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.pwd-reset-input::placeholder {
+    color: #6b7280;
+}
+
+.pwd-reset-helper-text {
+    color: #9ca3af;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.pwd-reset-error-text {
+    color: #f87171;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.pwd-reset-button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 500;
+    padding: 12px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: none;
+    font-size: 16px;
+}
+
+.pwd-reset-button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+.pwd-reset-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pwd-reset-success-container {
+    text-align: center;
+}
+
+.pwd-reset-success-icon {
+    color: #4ade80;
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.pwd-reset-success-message {
+    color: #e0e0e0;
+    margin-bottom: 24px;
+}
+
+.pwd-reset-login-button {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: none;
+    font-size: 16px;
+}
+
+.pwd-reset-login-button:hover {
+    background-color: #1d4ed8;
+}

@@ -1,0 +1,243 @@
+/* DARK MODE ONLY STYLES */
+
+.viewuser-main {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 16px;
+  background: #111;
+}
+
+.viewuser-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+  background: #18181b;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  padding: 18px 24px;
+  color: #e0e0ff;
+}
+
+.viewuser-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #23232b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #ec2b92;
+}
+
+.viewuser-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.viewuser-avatar-fallback {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #ec2b92;
+}
+
+.viewuser-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #e0e0ff;
+}
+
+.viewuser-username {
+  color: #ec2b92;
+  font-weight: 700;
+}
+
+.viewuser-searchbar {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.viewuser-searchbar input {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #23232b;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 320px;
+  background: #23232b;
+  color: #e0e0ff;
+  transition: border 0.2s;
+}
+
+.viewuser-searchbar input:focus {
+  border: 1.5px solid #ec2b92;
+  outline: none;
+}
+
+.viewuser-loading,
+.viewuser-noposts {
+  text-align: center;
+  color: #ec2b92;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+
+.viewuser-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.viewuser-post-card {
+  background: #18181b;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  padding: 18px 22px 14px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #e0e0ff;
+}
+
+.viewuser-post-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #e0e0ff;
+}
+
+.viewuser-post-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #23232b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ec2b92;
+}
+
+.viewuser-post-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.viewuser-post-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #e0e0ff;
+}
+
+.viewuser-post-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e0e0ff;
+}
+
+.viewuser-post-date {
+  font-size: 0.95rem;
+  color: #ec2b92;
+}
+
+.viewuser-post-tag {
+  font-size: 0.92rem;
+  color: #bdbdbd;
+}
+
+.viewuser-post-content {
+  font-size: 1.05rem;
+  color: #e0e0ff;
+  margin-bottom: 6px;
+}
+
+.viewuser-post-actions {
+  display: flex;
+  gap: 18px;
+  font-size: 1.05rem;
+  color: #ec2b92;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.viewuser-back-btn-container {
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 0;
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.viewuser-back-btn-text {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.viewuser-avatar-big {
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  width: 120px;
+  height: 120px;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewuser-avatar-big img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.viewuser-title-big {
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #e0e0ff;
+}
+
+.viewuser-username-big {
+  font-size: 2.1rem;
+  color: #ec2b92;
+  font-weight: 800;
+}
+
+.viewuser-back-btn-absolute {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 10;
+}
+
+.viewuser-title-divider {
+  margin: 26px auto 42px auto;
+  width: 100%;
+  max-width: 700px;
+  border-bottom: 2px solid #373737;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 700px) {
+    .viewuser-back-btn-absolute{
+        left: 4px;
+        top: 14px;
+    }
+}

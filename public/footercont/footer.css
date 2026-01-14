@@ -1,0 +1,458 @@
+body {
+  background-color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #000000;
+  color: #dddddd;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.container p {
+  color: #cccccc;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.container .devs {
+  font-weight: bold;
+  color: #1e90ff;
+  margin: 15px 0;
+}
+
+.container h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+
+.container ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.container ul li {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #bbbbbb;
+}
+
+.container ul li:before {
+  content: "•";
+  color: #1e90ff;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+
+.container footer {
+  text-align: center;
+  color: #777777;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  padding: 10px 0;
+  border-top: 1px solid #444444;
+}
+
+/* General dark mode settings */
+body.footer-page {
+  background-color: #000000;
+  color: #F5F5F5;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Page title styling */
+.page-title {
+  color: #0080ff;
+  /* Golden yellow for a premium vibe */
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Section titles styling */
+.section-title {
+  color: #1DB954;
+  /* Spotify-inspired green */
+  font-size: 1.8rem;
+  margin: 20px 0 10px 0;
+}
+
+/* Paragraph text styling */
+.content-text {
+  color: #E5E5E5;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Intro and contact info styling */
+.intro-text,
+.contact-info {
+  font-style: italic;
+  color: #9ADCFF;
+  /* Soft cyan to complement the dark background */
+  margin-bottom: 20px;
+}
+
+/* Links styling */
+.email-link {
+  color: #FF4500;
+  /* Warm orange for standout links */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Thank-you message styling */
+.thank-you {
+  color: #32CD32;
+  /* Bright lime green */
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Content area responsiveness */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .content-text {
+    font-size: 1rem;
+  }
+}
+
+
+/* General dark mode settings */
+body.privacy-page {
+  background-color: #000000;
+  color: #ECECEC;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Page title styling */
+.page-title {
+  color: #FFDF00;
+  /* Bright yellow for emphasis */
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Section titles styling */
+.section-title {
+  color: #4CAF50;
+  /* Green for visibility */
+  font-size: 1.8rem;
+  margin: 20px 0 10px;
+}
+
+/* List content styling */
+.content-list {
+  color: #F0F0F0;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+/* Paragraph text styling */
+.content-text {
+  color: #D3D3D3;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Intro and contact info styling */
+.intro-text,
+.contact-info {
+  font-style: italic;
+  color: #00C8FF;
+  /* Bright blue to capture attention */
+  margin-bottom: 20px;
+}
+
+/* Links styling */
+.email-link {
+  color: #FF4500;
+  /* Standout orange for links */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Last updated styling */
+.last-updated {
+  color: #FF69B4;
+  /* Vibrant pink for visibility */
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .content-list,
+  .content-text {
+    font-size: 1rem;
+  }
+}
+
+
+/* General dark mode settings */
+body.feedback-page {
+  background-color: #000000;
+  /* Deep charcoal for a clean dark mode */
+  color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Page title styling */
+.page-title {
+  color: #0080ff;
+  /* Golden yellow for emphasis */
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.submit-button {
+  background-color: #1DB954;
+  /* Eye-catching green */
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px 0;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #14833B;
+  /* Slightly darker green on hover */
+}
+
+/* Paragraph text styling */
+.thank-you-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #E5E5E5;
+  margin: 10px 0;
+}
+
+.description,
+.encouragement {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #D3D3D3;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .description,
+  .encouragement {
+    font-size: 1rem;
+  }
+}
+
+
+/* General dark mode settings */
+body.contribute-page {
+  background-color: #000000;
+  /* Dark charcoal for a professional look */
+  color: #F5F5F5;
+  /* Light gray for readability */
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Page title styling */
+.page-title {
+  color: #0080ff;
+  /* Golden yellow for emphasis */
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.intro-text,
+.description,
+.vision-statement {
+  color: #E0E0E0;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.call-to-action {
+  color: #FFA500;
+  /* Bright orange for a sense of urgency */
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+/* Button styling */
+.action-button {
+  background-color: #1DB954;
+  /* Green for a standout action */
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #14833B;
+  /* Darker green for hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.2rem;
+  }
+
+  .intro-text,
+  .description,
+  .vision-statement,
+  .call-to-action {
+    font-size: 1rem;
+  }
+
+  .action-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+.submit-button a {
+  text-decoration: none;
+  /* color: #FFFFFF; */
+  color: inherit;
+}
+
+.gapde {
+  margin: 100px 0 100px 0;
+}
+
+.devs {
+    width: 100%;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #e0e0e0;
+  }
+
+  .devs h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00ffd5;
+  }
+
+  .devs p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .devs ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .devs li {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .devs .name {
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .devs a {
+    color: #00ffd5;
+    text-decoration: none;
+    margin-left: 8px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .devs a:hover {
+    color: #1de9b6;
+    text-decoration: underline;
+  }

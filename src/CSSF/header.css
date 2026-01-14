@@ -1,0 +1,354 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1d1b1b;
+    background-color: #000000;
+    background-color: #141418;
+    /* background-color: #1a1a1a; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 50;
+    color: #f5f5f5;
+  }
+  
+  .container {
+    /* margin-bottom: 100px; */
+    padding: 0.75rem 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    /* background-color: #7b3af5; */
+    /* background-color: #0073e6; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .logo img{
+    width: 35px;
+    height: 35px;
+    margin-top: 3px;
+    /* margin-right: -3px; */
+  }
+  
+  .app-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    color: #f5f5f5;
+    cursor: pointer;
+  }
+
+  .app-name img{
+    height: 30px;
+    margin-left: -5px;
+  }
+  
+  .search-section {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 2rem;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 2.5rem;
+    /* padding: 0.3rem 0 0.3rem 2.5rem; */
+    border-radius: 9999px;
+    border: 1px solid #444;
+    outline: none;
+    background-color: #333;
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+  }
+  
+  .action-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .create-post-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    /* background-color: #7b3af5; */
+    background-color: #0080ff;
+    background-color: #ec2b92;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+  }
+  .create-post-btn:hover {
+    background-color: #0061c1;
+    background-color: #f43fa0;
+  }
+  
+  .logout-btn {
+    color: #f5f5f5;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #555;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 760px) {
+    .container {
+      padding: 0.7rem;
+    }
+    
+    .search-section {
+      margin: 0 0.5rem;
+      min-width: 200px;
+      max-width: 250px;
+    }
+    
+    .logo {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+    
+    .app-name {
+      display: none;
+    }
+    
+    .create-text {
+      display: none;
+    }
+    
+    .create-post-btn {
+      padding: 0.4rem;
+    }
+    
+    .action-section {
+      gap: 0.5rem;
+    }
+    
+    .profile-pic {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-section {
+      max-width: 120px;
+    }
+
+    .logo img{
+      margin-left: 5px;
+    }
+  }
+
+
+
+
+  .logout-dialog-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .logout-dialog {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 24px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 1px solid #333;
+  }
+  
+  .logout-dialog h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #f0f0f0;
+    margin-bottom: 12px;
+  }
+  
+  .logout-dialog p {
+    margin-bottom: 24px;
+    color: #b0b0b0;
+  }
+  
+  .logout-dialog-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .logout-dialog-buttons button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+  }
+  
+  .cancel-btn {
+    background-color: #ff4500;
+    color: #f0f0f0;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #ff5722;
+  }
+  
+  .confirm-btn {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #444444;
+  }
+
+
+
+
+
+
+
+
+
+  /* .search-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 12px 40px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  } */
+  
+  /* .search-input:focus {
+    outline: none;
+    border-color: #4d4d4d;
+    box-shadow: 0 0 0 2px rgba(90, 90, 90, 0.3);
+  } */
+  
+  /* .search-input::placeholder {
+    color: #666;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+  } */
+  
+  .clear-icon {
+    position: absolute;
+    right: 10px;
+    top: 56%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: -6px;
+    margin-top: 6px;
+  }
+  
+  .filter-btn {
+    padding: 2px 6px;
+    background-color: #222;
+    border: 1px solid #333;
+    color: #888;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-btn:hover {
+    background-color: #2a2a2a;
+  }
+  
+  .filter-btn.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #444;
+  }

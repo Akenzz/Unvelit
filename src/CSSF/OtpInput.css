@@ -1,0 +1,87 @@
+.otp-container {
+    background-color: #1E1E1E;
+    background-color: #191919af;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.otpcent {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/stars.jpg') !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.otp-form h2 {
+    margin-bottom: 20px;
+    color: #E0E0E0;
+}
+
+.otp-input-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.otp-input {
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.otp-input:focus {
+    border-color: #4A90E2;
+    border-color: #ec2b92;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
+}
+
+.otp-submit-btn {
+    background-color: #4A90E2;
+    background-color: #ec2b92;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.otp-submit-btn:hover {
+    background-color: #357ABD;
+    background-color: #d60072;
+}
+
+.otpq {
+    margin: 10px;
+    margin-bottom: 25px;
+    color: #4A90E2;
+    color: #ec2b92;
+}
+
+.otpmessage {
+    margin-top: 20px;
+    color: red;
+}
+
+@media screen and (max-width: 720px) {
+    .otpcent{
+        height: 92vh;
+    }
+}
